@@ -7,11 +7,11 @@
     height: 20vh;
     border: 1px solid black;
     display: flex;
-    background: linear-gradient(red, white);
+    background: linear-gradient(blue, white);
 }
 .avatar{
-    width: 150px;
-    height: 150px;
+    width: 12%;
+    height: 12vh;
     border: 1px solid black;
     border-radius: 50%;
     margin-top: 3%;
@@ -20,14 +20,17 @@
 }
 .userName{
     margin-left: 3%;
+    color: snow;
 }
 .body{
     width: 100%;
-display: flex;
+   display: flex;
+   height: 70%;
 }
 .show{
     width:75%;
     border: 1px solid black;
+    position: relative;
 }
 .menu{
     width: 25%;
@@ -36,7 +39,8 @@ display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient( white,red);
+    background: linear-gradient( white,blue);
+    
 
 }
 .menu button{
@@ -44,12 +48,13 @@ display: flex;
     height: 7%;
     border-radius: 10px;
     border: none;
-    background:linear-gradient(45deg,red,white) ;
+    background:linear-gradient(45deg,blue,white) ;
+    color: snow;
     
     
 }
 .menu button:hover{
-    background: linear-gradient(white,red);
+    background: linear-gradient(white,blue);
     border: none;
     box-shadow: 7px 0px 7px 0px snow;
     color: snow;
@@ -58,15 +63,22 @@ display: flex;
 .foother{
     border: 1px solid black;
     height:10vh;
-    background: linear-gradient( white,red);
+    background: linear-gradient( white,blue);
 
 }
 .foother input{
     width: 50%;
     height: 8vh;
 }
-.any{
-  
-    width: 100%;
-    height: 100%;
+.sendButton{
+    width: 20%;
+    height: 40%;
+    margin-left: 10px;
+    border-radius: 5%;
+    background: linear-gradient( white,blue);
+    border: none;
+}
+.sendButton:hover{
+    box-shadow: 0px 0px 10px 10px snow;
+    color: snow;
 }
