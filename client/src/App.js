@@ -1,14 +1,36 @@
-import './App.css';
-import React from "react";
+import { useState } from 'react';
+import './assets/icons/style.css'
 import Cv from "./Cv";
-import Modal from './Modal';
+import './App.css'
+import blueplanet from './video/blueplanet.mp4';
 
-function App() {
-  return (
-    <div className="App">
-      <Cv/>
+
+
+function App(){
+  const [show, setShow] = useState(true);
+
+  return(
+    <div className='App'>
+   
+      {
+        show?   <div className='v'>
+        <div className='Forbutton'>
+        <button onClick={()=>{
+          console.log(show)
+          setShow(false)
+        }} className='but'>click</button>
+        </div>
+        <video className='vid' src={blueplanet}autoPlay loop muted />
+        </div>: <Cv/>
+
+
+      }
     </div>
-  );
+  )
 }
-
 export default App;
+
+
+
+
+

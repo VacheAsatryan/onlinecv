@@ -10,13 +10,12 @@
     background: linear-gradient(blue, white);
 }
 .avatar{
-    width: 12%;
-    height: 12vh;
+    width: 15%;
+    height:initial;
     border: 1px solid black;
-    border-radius: 50%;
-    margin-top: 3%;
-    background-color: aqua;
-    margin-left: 3%;
+   background-image: url();
+    background: linear-gradient(blue, white);
+    margin-left: 1%;
 }
 .userName{
     margin-left: 3%;

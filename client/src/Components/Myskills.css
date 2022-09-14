@@ -15,14 +15,87 @@
     margin-top: 20px;
 }
 
-.top div{
-    width: 20%;
-    height: 150px;
-    border: 4px solid grey;
-    border-radius: 50%;
-    color: blue;
+.html{
+    width: 5%;
+    height: 5vh;
+    border: 1px solid grey;
+    border-radius: 5%;
+    color: grey;
+    background: linear-gradient(rgb(87, 87, 245), white);
+
    display: flex;
-   font-size: 160%;
+   font-size: 5px;
    justify-content: center;
    align-items: center;
+   animation-name: html;
+   animation-delay: 1s;
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
+   visibility: hidden;
+}
+@keyframes html{
+    100%{
+        width: 20%;
+        height: 15vh;
+        border-radius: 50%;
+        visibility: visible;
+        font-size: 20px;
+    }
+}
+.css{
+ 
+    width: 5%;
+    height: 5vh;
+    border: 1px solid grey;
+    border-radius: 5%;
+        color: grey;
+        background: linear-gradient(rgb(87, 87, 245), white);
+    
+       display: flex;
+       font-size: 5px;
+       justify-content: center;
+       align-items: center;
+       visibility: hidden;
+       animation-name:css ;
+       animation-delay: 2.5s;
+       animation-duration: 1.5s;
+       animation-fill-mode: forwards;
+    
+}
+@keyframes css{
+    100%{
+        width: 20%;
+        height: 15vh;
+        border-radius: 50%;
+        visibility: visible;
+        font-size: 20px;
+    }
+}
+
+.js{
+    width: 5%;
+    height: 5vh;
+    border: 1px solid grey;
+    border-radius: 5%;
+    color: grey;
+    background: linear-gradient(rgb(87, 87, 245), white);
+
+   display: flex;
+   font-size: 5px;
+   justify-content: center;
+   align-items: center;
+   visibility: hidden;
+   animation-name:js ;
+   animation-delay: 4s;
+   animation-duration: 1.5s;
+   animation-fill-mode: forwards;
+}
+@keyframes js{
+    100%{
+        width: 20%;
+        height: 15vh;
+        border-radius: 50%;
+        visibility: visible;
+        font-size: 20px;
+    }
 }

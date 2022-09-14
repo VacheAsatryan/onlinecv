@@ -1,3 +1,30 @@
+.App{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.v{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid{
+width: 100%;
 
+}
+.but{
 
-
+}
+.Forbutton{
+    width: 20%;
+    height: 20%;
+    background-color:rgba(238, 238, 238,0.4);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    top: 50%;
+}

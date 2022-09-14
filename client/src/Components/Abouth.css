@@ -9,32 +9,126 @@
 }
 
 .myName{
-    margin-top: 5%;
-    margin-left: 3%;
-    color:grey;
+      position: absolute;
+    top: 75px;
+    left: 3%;
+    color:snow;
     font-size: 20px;
-    border: 3px solid grey;
-    width: 80%;
+    border: 3px solid snow;
+    background: linear-gradient(blue, white);
+    box-shadow: 0px 0px 20px 0px blue;
+    width: 1%;
     padding: 2%;
+    visibility: hidden;
+    animation-name: myname;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
     
 }
-.myLearn{
-    margin-top: 7%;
-    margin-right: 3%;
+@keyframes myname {
+
+  100%{
     width: 80%;
+    visibility: visible;
+    
+  }
+}
+.myName span{
+  
+    animation-name: span;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-size: 1px;
+    visibility: hidden;
+
+}
+@keyframes span {
+   
+    100%{
+        visibility: visible;
+        font-size: 18px;
+    } 
+}
+.myLearn{
+   
+    width: 15%;
     font-size: 20px;
-   border: 3px solid grey;
-   text-align: center;
-   margin-left: 13%;
-   padding: 2%;
+    border: 3px solid snow;
+    color: snow;
+    text-align: center;
+    background: linear-gradient(blue, white);
+    box-shadow: 0px 0px 20px 0px blue;
+    padding: 2%;
+    position: absolute;
+   right: 3%;
+    visibility: hidden;
+    animation-name: second;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes second{
+    100%{
+        width: 80%;
+        visibility: visible;
+        
+      }
+}
+.myLearn span{
+    animation-name: secondspan;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-size: 1px;
+    visibility: hidden;
+}
+@keyframes secondspan {
+   
+    100%{
+        visibility: visible;
+        font-size: 18px;
+    } 
 }
 .aft{
-    margin-top: 5%;
-    margin-left: 3%;
-    color:grey;
+    
+    color:snow;
     font-size: 20px;
-    border: 3px solid grey;
+    background: linear-gradient(blue, white);
+    box-shadow: 0px 0px 20px 0px blue;
+    border: 3px solid snow;
+    position: absolute;
     padding: 2%;
-    width: 80%;
+    width: 10%;
+    left: 3%;
+    bottom: 60px;
+    visibility: hidden;
+    animation-name: name;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
 }
-
+@keyframes name {
+    100%{
+        width: 80%;
+        visibility: visible;
+        
+      }
+}
+.aft span{
+    font-size: 1px;
+    animation-name: thrdspan;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    font-size: 1px;
+    visibility: hidden;
+}
+@keyframes thrdspan {
+   
+    100%{
+        visibility: visible;
+        font-size: 18px;
+    } 
+}

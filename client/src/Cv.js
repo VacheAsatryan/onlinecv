@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import './App.css';
 import './Cv.css';
 import Modal from "./Modal";
 import Abouth from "./Components/Abouth";
@@ -7,6 +6,11 @@ import Educations from "./Components/Educations";
 import Experience from "./Components/Experience";
 import Myskills from "./Components/Myskills";
 import Languages from "./Components/Languages";
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { ADD,ADDSEC } from "./redux/abouth/abouthSlicer";
+import Contact from "./Components/Contact";
+
 function Cv() {
   const [modalAbouth, setModalAbouth] = useState(false)
   const [modalEducations, setModalEducations] = useState(false)
@@ -14,6 +18,13 @@ function Cv() {
   const [modalMySkills,setModalMySkills] =useState(false)
   const [modalLanguages, setModalLanguages] =useState(false)
   const [modalContact,setModalContact] = useState(false)
+  const dispatch = useDispatch();
+  const item = useSelector((state) =>{
+    return state.items.item
+});
+const itemSec =useSelector((state)=>{
+  return state.items.itemSec
+})
 
   function showAbout() {
     setModalEducations(false)
@@ -22,6 +33,18 @@ function Cv() {
     setModalLanguages(false)
     setModalContact(false)
     setModalAbouth(true)
+    dispatch({
+      type:ADD,
+      payload:{
+        item:true
+      }
+    })
+    dispatch({
+      type:ADDSEC,
+      payload:{
+        itemSec:false
+      }
+    })
   }
  
   function showEducations() {
@@ -31,6 +54,19 @@ function Cv() {
     setModalLanguages(false)
     setModalContact(false)
     setModalEducations(true)
+    dispatch({
+      type:ADD,
+      payload:{
+        item:false
+      }
+    })
+    dispatch({
+      type:ADDSEC,
+      payload:{
+        itemSec:false
+      }
+    })
+    
   }
    function showExperience(){
     setModalAbouth(false)
@@ -39,6 +75,18 @@ function Cv() {
     setModalLanguages(false)
     setModalContact(false)
     setModalExperience(true)
+    dispatch({
+      type:ADD,
+      payload:{
+        item:false
+      }
+    })
+    dispatch({
+      type:ADDSEC,
+      payload:{
+        itemSec:false
+      }
+    })
   }
   function showMySkills(){
     setModalAbouth(false)
@@ -47,6 +95,18 @@ function Cv() {
     setModalLanguages(false)
     setModalContact(false)
     setModalMySkills(true)
+    dispatch({
+      type:ADD,
+      payload:{
+        item:false
+      }
+    })
+    dispatch({
+      type:ADDSEC,
+      payload:{
+        itemSec:true
+      }
+    })
   }
   function showLanguages(){
     setModalAbouth(false)
@@ -55,6 +115,18 @@ function Cv() {
     setModalMySkills(false)
     setModalContact(false)
     setModalLanguages(true)
+    dispatch({
+      type:ADD,
+      payload:{
+        item:false
+      }
+    })
+    dispatch({
+      type:ADDSEC,
+      payload:{
+        itemSec:false
+      }
+    })
   }
   function showContact(){
     setModalAbouth(false)
@@ -63,6 +135,18 @@ function Cv() {
     setModalMySkills(false)
     setModalLanguages(false)
     setModalContact(true)
+    dispatch({
+      type:ADD,
+      payload:{
+        item:false
+      }
+    })
+    dispatch({
+      type:ADDSEC,
+      payload:{
+        itemSec:false
+      }
+    })
   }
   return (
 
@@ -101,14 +185,15 @@ function Cv() {
           <Modal active={modalLanguages} setactive={setModalLanguages}>
             <Languages/>
           </Modal>
-          <Modal active={modalContact} setactive={setModalContact}>modal 6</Modal>
+          <Modal active={modalContact} setactive={setModalContact}>
+            <Contact/>
+          </Modal>
 
         </div>
       </div>
 
       <div className="foother">
-        <input type='text' placeholder='recomendet' />
-        <button className="sendButton">send</button>
+      
       </div>
 
     </div>
