@@ -18,7 +18,7 @@ function Myskills(){
            <div className="top">
             <div className={itemSec? "js" :""}> <span className='icon-redux'></span> React  <br/>Redux</div>
             <div  className={itemSec? "js" :""}> <span className='icon-github'> </span> Github </div>
-            <div  className={itemSec? "js" :""}> <span className='icon-mongodb'></span> Github </div>
+            <div  className={itemSec? "js" :""}> <span className='icon-mongodb'></span> mongodb </div>
            </div>
            
         </div>
