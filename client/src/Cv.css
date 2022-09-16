@@ -4,17 +4,23 @@
 }
 .header{
     width:100%;
+    height: 10vh;
     height: 20vh;
     border: 1px solid black;
     display: flex;
     background: linear-gradient(blue, white);
 }
+.vache{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .avatar{
-    width: 15%;
+    width: 10%;
     height:initial;
     border: 1px solid black;
    background-image: url();
-    background: linear-gradient(blue, white);
+    background: white;
     margin-left: 1%;
 }
 .userName{

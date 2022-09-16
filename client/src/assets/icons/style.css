@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?oqdoep');
-  src:  url('fonts/icomoon.eot?oqdoep#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?oqdoep') format('truetype'),
-    url('fonts/icomoon.woff?oqdoep') format('woff'),
-    url('fonts/icomoon.svg?oqdoep#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?crrxqc');
+  src:  url('fonts/icomoon.eot?crrxqc#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?crrxqc') format('truetype'),
+    url('fonts/icomoon.woff?crrxqc') format('woff'),
+    url('fonts/icomoon.svg?crrxqc#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,7 +25,47 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-redux:before {
+  content: "\e907";
+  color: #764abc;
+}
+.icon-mongodb:before {
+  content: "\e906";
+  color: #47a248;
+}
+.icon-nodemon:before {
+  content: "\e902";
+  color: #76d04b;
+}
+.icon-react:before {
+  content: "\e903";
+  color: #61dafb;
+}
+.icon-javascript:before {
+  content: "\e904";
+  color: #f7df1e;
+}
+.icon-sass:before {
+  content: "\e905";
+  color: #c69;
+}
+.icon-css3:before {
+  content: "\e901";
+  color: #1572b6;
+}
+.icon-html5:before {
+  content: "\e900";
+  color: #e34f26;
+}
 .icon-phone:before {
   content: "\e942";
 }
-
+.icon-envelop:before {
+  content: "\e945";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-github:before {
+  content: "\eab0";
+}

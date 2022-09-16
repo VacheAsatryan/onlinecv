@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { ADD,ADDSEC } from "./redux/abouth/abouthSlicer";
 import Contact from "./Components/Contact";
+import vach5 from "./images/vach5.jpg"
 
 function Cv() {
   const [modalAbouth, setModalAbouth] = useState(false)
@@ -153,7 +154,7 @@ const itemSec =useSelector((state)=>{
     <div className="info" >
       <div className="header">
         <div className="avatar">
-
+        <img src={vach5} alt="vacheeeee" className="vache"/>
         </div>
         <div className="userName">
           <h1>Vache Asatryan</h1>

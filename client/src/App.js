@@ -15,6 +15,9 @@ function App(){
       {
         show?   <div className='v'>
         <div className='Forbutton'>
+        <span className='description'>
+      This page was created to<br/> demonstrate my sciences,
+        React js,<br/> Redox was used to create this<br/> page</span>
         <button onClick={()=>{
           console.log(show)
           setShow(false)
