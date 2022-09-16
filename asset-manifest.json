@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e4b8dd1.css",
-    "main.js": "/static/js/main.c76bc27f.js",
-    "static/media/blueplanet.mp4": "/static/media/blueplanet.22e81fc0c6de56cc24ee.mp4",
-    "static/media/vach5.jpg": "/static/media/vach5.ce258f4ea6b78116fcef.jpg",
-    "static/media/icomoon.svg?crrxqc": "/static/media/icomoon.dfa1561f54ab17e976b7.svg",
-    "static/media/icomoon.eot?crrxqc": "/static/media/icomoon.7e42e9d41b1b1c167bf6.eot",
-    "static/media/icomoon.woff?crrxqc": "/static/media/icomoon.8b6c1087fae8130e567b.woff",
-    "static/media/icomoon.ttf?crrxqc": "/static/media/icomoon.3ac57684214599483303.ttf",
-    "index.html": "/index.html",
-    "main.5e4b8dd1.css.map": "/static/css/main.5e4b8dd1.css.map",
-    "main.c76bc27f.js.map": "/static/js/main.c76bc27f.js.map"
+    "main.css": "/onlinecv/static/css/main.48f70209.css",
+    "main.js": "/onlinecv/static/js/main.7f52c7b6.js",
+    "static/media/blueplanet.mp4": "/onlinecv/static/media/blueplanet.22e81fc0c6de56cc24ee.mp4",
+    "static/media/vach5.jpg": "/onlinecv/static/media/vach5.ce258f4ea6b78116fcef.jpg",
+    "static/media/icomoon.svg?crrxqc": "/onlinecv/static/media/icomoon.dfa1561f54ab17e976b7.svg",
+    "static/media/icomoon.eot?crrxqc": "/onlinecv/static/media/icomoon.7e42e9d41b1b1c167bf6.eot",
+    "static/media/icomoon.woff?crrxqc": "/onlinecv/static/media/icomoon.8b6c1087fae8130e567b.woff",
+    "static/media/icomoon.ttf?crrxqc": "/onlinecv/static/media/icomoon.3ac57684214599483303.ttf",
+    "index.html": "/onlinecv/index.html",
+    "main.48f70209.css.map": "/onlinecv/static/css/main.48f70209.css.map",
+    "main.7f52c7b6.js.map": "/onlinecv/static/js/main.7f52c7b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e4b8dd1.css",
-    "static/js/main.c76bc27f.js"
+    "static/css/main.48f70209.css",
+    "static/js/main.7f52c7b6.js"
   ]
 }
